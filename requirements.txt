@@ -14,6 +14,6 @@ opencv-python-headless==5.0.0.93
 h5py==3.16.0
 PyYAML==6.0.3
 huggingface_hub==2.2.0
-# Paper 03 (ECG) only
+# ecg-attribution-testing (ECG) only
 wfdb
 neurokit2

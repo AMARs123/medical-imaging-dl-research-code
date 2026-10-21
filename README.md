@@ -12,16 +12,16 @@ uncertainty and edge cost. All studies use public datasets.
 
 | Folder | Topic | Data |
 |---|---|---|
-| [`Paper_01`](Paper_01) | Brain tumour MRI: do classifiers look at the tumour? | Figshare brain tumour MRI dataset (Cheng et al.) |
-| [`Paper_02`](Paper_02) | Skin lesion classification: stability of model rankings | HAM10000 (lesion-grouped splits); ISIC 2018 for external testing |
-| [`Paper_03`](Paper_03) | ECG attribution maps: reference levels for testing explanations | PTB-XL (patient-level folds); Chapman for external testing |
-| [`Paper_04`](Paper_04) | Chest X-ray pneumonia: separating hospital and age shifts | NIH ChestX-ray14 and the Kermany paediatric chest X-ray set |
-| [`Paper_05`](Paper_05) | Diabetic retinopathy grading: ordinal formulations and uncertainty | DDR fundus dataset |
-| [`Paper_06`](Paper_06) | Leaf disease recognition: laboratory-to-field transfer | PlantVillage (laboratory) and PlantDoc (field) |
-| [`Paper_07`](Paper_07) | Glaucoma from fundus photographs: leave-one-camera-out evaluation | Chaksu (multi-camera, multi-expert) and PAPILA |
-| [`Paper_08`](Paper_08) | Waste sorting: studio-to-wild transfer and edge cost | TrashNet (studio images) and TACO (in-the-wild images) |
-| [`Paper_09`](Paper_09) | Segmentation failure detection with uncertainty | Kvasir-SEG (polyps) and HAM10000 / ISIC (skin lesions) |
-| [`Paper_10`](Paper_10) | Histopathology: pretraining and stain augmentation under realistic model selection | Camelyon17-WILDS |
+| [`brain-tumour-mri-explainability`](brain-tumour-mri-explainability) | Brain tumour MRI: do classifiers look at the tumour? | Figshare brain tumour MRI dataset (Cheng et al.) |
+| [`skin-lesion-model-ranking`](skin-lesion-model-ranking) | Skin lesion classification: stability of model rankings | HAM10000 (lesion-grouped splits); ISIC 2018 for external testing |
+| [`ecg-attribution-testing`](ecg-attribution-testing) | ECG attribution maps: reference levels for testing explanations | PTB-XL (patient-level folds); Chapman for external testing |
+| [`chest-xray-pneumonia-shift`](chest-xray-pneumonia-shift) | Chest X-ray pneumonia: separating hospital and age shifts | NIH ChestX-ray14 and the Kermany paediatric chest X-ray set |
+| [`diabetic-retinopathy-ordinal-grading`](diabetic-retinopathy-ordinal-grading) | Diabetic retinopathy grading: ordinal formulations and uncertainty | DDR fundus dataset |
+| [`leaf-disease-lab-to-field`](leaf-disease-lab-to-field) | Leaf disease recognition: laboratory-to-field transfer | PlantVillage (laboratory) and PlantDoc (field) |
+| [`glaucoma-cross-camera`](glaucoma-cross-camera) | Glaucoma from fundus photographs: leave-one-camera-out evaluation | Chaksu (multi-camera, multi-expert) and PAPILA |
+| [`waste-sorting-edge`](waste-sorting-edge) | Waste sorting: studio-to-wild transfer and edge cost | TrashNet (studio images) and TACO (in-the-wild images) |
+| [`segmentation-failure-detection`](segmentation-failure-detection) | Segmentation failure detection with uncertainty | Kvasir-SEG (polyps) and HAM10000 / ISIC (skin lesions) |
+| [`histopathology-hospital-shift`](histopathology-hospital-shift) | Histopathology: pretraining and stain augmentation under realistic model selection | Camelyon17-WILDS |
 
 Each folder has its own README and a `src/` folder with the full pipeline for that study.
 
@@ -42,7 +42,7 @@ pip install -r requirements.txt
 ```
 
 `shared_resources/` holds small helpers used by several studies (plot style, partial download of remote zip files).
-The `*.sbatch` files are SLURM jobs for a GPU server; replace `/path/to/Journal_Papers_Research` with your own path.
+The `*.sbatch` files are SLURM jobs for a GPU server; replace `/path/to/imaging_research` with your own path.
 
 ## Citation
 
