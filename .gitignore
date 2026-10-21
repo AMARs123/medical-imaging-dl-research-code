@@ -1,0 +1,21 @@
+# Code only: no data, results, figures or manuscripts
+*.csv
+*.json
+*.npy
+*.npz
+*.pt
+*.pth
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.docx
+*.tex
+*.zip
+*.log
+data/
+experiments/
+results/
+figures/
+paper/
+__pycache__/
